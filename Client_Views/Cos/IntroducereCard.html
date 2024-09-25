@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ComputerCorner</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css" />
+    <!-- Insert this within your head tag and after foundation.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
+
+    <style>
+      .button-group {
+        display: flex;
+        justify-content: space-between; 
+        padding: 0 1rem; 
+      }
+    </style>
+    
+  </head>
+
+
+    <hr />
+
+    <center><h5><b>Introduceti datele cardului:</b></h5></center>
+    <br><br>
+    <form>
+      <div class="grid-x grid-padding-x">
+        <center><fieldset class="large-5 cell">
+          <label>Tipul cardului</label>
+          <input type="radio" name="TipCard" value="Visa" id="Visa" required><label for="Visa"><img src="../../images/Visa.png" alt="Visa" width="70" height="35"></label>
+          <input type="radio" name="TipCard" value="MasterCard" id="MasterCard"><label for="MasterCard"><img src="../../images/MasterCard.jpg" alt="MasterCard" width="70" height="35"></label>
+          <input type="radio" name="TipCard" value="JCB" id="JCB"><label for="JCB"><img src="../../images/JCB.png" alt="JCB" width="70" height="35"></label>
+        </fieldset></center>
+      <div class="row">
+        <div class="columns large-centered large-5 medium-5 medium-centered small-12 small-centered cell">
+          <label>Numele de pe card</label>
+          <input type="text" placeholder="Nume" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns large-centered large-5 medium-5 medium-centered small-12 small-centered cell">
+          <label>Numar de credit</label>
+          <input type="text" placeholder="0000 0000 0000 0000" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns large-centered large-2 medium-2 medium-centered small-9 small-centered cell">
+          <label>Data expirarii</label>
+          <input type="text" placeholder="MM/YY" required/>
+        </div>
+        <div class="columns large-centered large-2 medium-2 medium-centered small-9 small-centered cell">
+          <label>CVC/CVV</label>
+          <input type="text" placeholder="123" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns text-right button-group">
+          <a href="Client_ComandaInfo_tab.php" class="button secondary">Inapoi</a>
+          <a href="Client_ConfirmareComanda_tab.html" class="button">Finalizare</a>
+        </div>
+      </div>
+    </form>
+
+    <hr />
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
